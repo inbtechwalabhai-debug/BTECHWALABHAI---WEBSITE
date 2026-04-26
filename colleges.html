@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colleges - BTECHWALABHAI</title>
+
+    <link rel="stylesheet" href="resource_style.css">
+
+    <style>
+        /* GRID */
+        .college-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* CARD */
+        .college-card {
+            background: #161B22;
+            padding: 15px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            border: 1px solid #30363D;
+            transition: 0.3s;
+        }
+
+        .college-card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .college-card h3 {
+            color: #58A6FF;
+            margin: 10px 0 5px;
+        }
+
+        .college-card p {
+            font-size: 13px;
+            color: #9CA3AF;
+        }
+
+        .college-card:hover {
+            transform: translateY(-5px);
+            border-color: #58A6FF;
+        }
+
+         .college-card a{
+text-decoration:none;
+color:#58A6FF;
+transition:0.3s;
+}
+
+.college-card a:hover{
+color:#58A6FF;
+text-decoration:underline;
+}
+
+        /* LIST */
+        .college-list {
+            margin-top: 20px;
+            list-style: none;
+            padding: 0;
+
+            display: grid;
+            /* ADD THIS */
+            grid-template-columns: repeat(4, 1fr);
+            /* 4 column */
+            gap: 10px;
+            /* spacing */
+        }
+
+        .college-list li {
+            margin: 0;
+            /* remove vertical margin */
+            color: #c9d1d9;
+
+            background: #161B22;
+            /* ADD (UI better) */
+            padding: 8px;
+            border-radius: 6px;
+            text-align: center;
+            border: 1px solid #30363D;
+            transition: 0.3s;
+        }
+
+        .college-list li:hover {
+            background: #21262D;
+            color: #58A6FF;
+            transform: translateY(-5px);
+            border-color: #58A6FF;
+        }
+
+        .college-heading {
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        .college-list a{
+text-decoration:none;
+color:#c9d1d9;
+transition:0.3s;
+}
+
+.college-list a:hover{
+color:#58A6FF;
+text-decoration:underline;
+}
+        /*Responsive*/
+        @media (max-width: 768px) {
+            .college-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="btechwalabhai logo.jpg">
+            <h2>BTECHWALABHAI</h2>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+
+            <div class="dropdown">
+                <a href="#">Resources ▼</a>
+                <div class="dropdown-content">
+                     <a href="course.html">Course</a>
+                    <a href="roadmap.html">Roadmap</a>
+                    <a href="colleges.html">Colleges</a>
+                    <a href="resource.html">Notes</a>
+                </div>
+            </div>
+
+            <a href="counselling.html">Counselling</a>
+            <a href="contact.html" class="nav-btn">Get Guidance</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Explore Engineering Colleges 🏫</h1>
+        <p>Find the best IITs, NITs, BCECE & UPTAC colleges.</p>
+    </section>
+
+    <!-- IIT SECTION -->
+    <section>
+        <h2>Top IITs in India</h2>
+
+        <div class="college-grid">
+<a href="https://home.iitd.ac.in/" target="_blank" class="college-card">
+    <img src="iit_delhi.webp">
+    <h3>IIT Delhi</h3>
+    <p>Top placement</p>
+</a>
+
+<a href="https://www.iitb.ac.in/" target="_blank" class="college-card">
+    <img src="iit_bombay.jpg">
+    <h3>IIT Bombay</h3>
+    <p>Best tech culture</p>
+</a>
+
+<a href="https://www.iitm.ac.in/" target="_blank" class="college-card">
+    <img src="iit_madras.jpeg">
+    <h3>IIT Madras</h3>
+    <p>Top ranked IIT</p>
+</a>
+
+<a href="https://www.iitk.ac.in/" target="_blank" class="college-card">
+    <img src="iit_kanpur.jpg">
+    <h3>IIT Kanpur</h3>
+    <p>Strong academics</p>
+</a>
+
+<a href="https://www.iitkgp.ac.in/" target="_blank" class="college-card">
+    <img src="iit_kharagpur.jpg">
+    <h3>IIT Kharagpur</h3>
+    <p>Oldest IIT</p>
+</a>
+
+        </div>
+
+        <h3 class="college-heading"> All IIT Colleges</h3>
+
+       <ul class="college-list">
+    <li><a href="https://www.iitb.ac.in/" target="_blank">IIT Bombay</a></li>
+    <li><a href="https://home.iitd.ac.in/" target="_blank">IIT Delhi</a></li>
+    <li><a href="https://www.iitm.ac.in/" target="_blank">IIT Madras</a></li>
+    <li><a href="https://www.iitk.ac.in/" target="_blank">IIT Kanpur</a></li>
+    <li><a href="https://www.iitkgp.ac.in/" target="_blank">IIT Kharagpur</a></li>
+    <li><a href="https://www.iitr.ac.in/" target="_blank">IIT Roorkee</a></li>
+
+    <li><a href="https://www.iitg.ac.in/" target="_blank">IIT Guwahati</a></li>
+    <li><a href="https://iith.ac.in/" target="_blank">IIT Hyderabad</a></li>
+    <li><a href="https://www.iiti.ac.in/" target="_blank">IIT Indore</a></li>
+    <li><a href="https://www.iitbhu.ac.in/" target="_blank">IIT BHU (Varanasi)</a></li>
+    <li><a href="https://www.iitgn.ac.in/" target="_blank">IIT Gandhinagar</a></li>
+    <li><a href="https://www.iitrpr.ac.in/" target="_blank">IIT Ropar</a></li>
+
+    <li><a href="https://www.iitp.ac.in/" target="_blank">IIT Patna</a></li>
+    <li><a href="https://www.iitj.ac.in/" target="_blank">IIT Jodhpur</a></li>
+    <li><a href="https://www.iitbbs.ac.in/" target="_blank">IIT Bhubaneswar</a></li>
+    <li><a href="https://www.iitmandi.ac.in/" target="_blank">IIT Mandi</a></li>
+    <li><a href="https://www.iittp.ac.in/" target="_blank">IIT Tirupati</a></li>
+    <li><a href="https://iitpkd.ac.in/" target="_blank">IIT Palakkad</a></li>
+
+    <li><a href="https://www.iitjammu.ac.in/" target="_blank">IIT Jammu</a></li>
+    <li><a href="https://www.iitdh.ac.in/" target="_blank">IIT Dharwad</a></li>
+    <li><a href="https://iitgoa.ac.in/" target="_blank">IIT Goa</a></li>
+    <li><a href="https://www.iitism.ac.in/" target="_blank">IIT Dhanbad (ISM)</a></li>
+    <li><a href="https://www.iitbhilai.ac.in/" target="_blank">IIT Bhilai</a></li>
+</ul>
+
+    <!-- NIT SECTION -->
+    <section>
+        <h2>Top NITs in India</h2>
+
+        <div class="college-grid">
+
+           <a href="https://www.nitt.edu/" target="_blank" class="college-card">
+    <img src="nit_trichy.jpg">
+    <h3>NIT Trichy</h3>
+    <p>Top NIT</p>
+</a>
+
+<a href="https://www.nitk.ac.in/" target="_blank" class="college-card">
+    <img src="nit_surathkal.jpeg">
+    <h3>NIT Surathkal</h3>
+    <p>Great placement</p>
+</a>
+
+<a href="https://www.nitw.ac.in/" target="_blank" class="college-card">
+    <img src="nit_warangal.jfif">
+    <h3>NIT Warangal</h3>
+    <p>Strong coding culture</p>
+</a>
+
+<a href="https://www.nitc.ac.in/" target="_blank" class="college-card">
+    <img src="nit_calicut.webp">
+    <h3>NIT Calicut</h3>
+    <p>Top-tier research</p>
+</a>
+
+<a href="https://nitdelhi.ac.in/" target="_blank" class="college-card">
+    <img src="nit_delhi.webp">
+    <h3>NIT Delhi</h3>
+    <p>Rapidly growing reputation as a top-tier technical institute</p>
+</a>
+
+        </div>
+
+        <h3 class="college-heading">All NIT Colleges</h3>
+
+        <ul class="college-list">
+    <li><a href="https://www.nitt.edu/" target="_blank">NIT Trichy</a></li>
+    <li><a href="https://www.nitk.ac.in/" target="_blank">NIT Surathkal</a></li>
+    <li><a href="https://www.nitw.ac.in/" target="_blank">NIT Warangal</a></li>
+    <li><a href="https://www.nitrkl.ac.in/" target="_blank">NIT Rourkela</a></li>
+    <li><a href="https://www.nitc.ac.in/" target="_blank">NIT Calicut</a></li>
+    <li><a href="https://nitdgp.ac.in/" target="_blank">NIT Durgapur</a></li>
+
+    <li><a href="https://www.nitkkr.ac.in/" target="_blank">NIT Kurukshetra</a></li>
+    <li><a href="http://www.nits.ac.in/" target="_blank">NIT Silchar</a></li>
+    <li><a href="https://nith.ac.in/" target="_blank">NIT Hamirpur</a></li>
+    <li><a href="https://www.nitjsr.ac.in/" target="_blank">NIT Jamshedpur</a></li>
+    <li><a href="https://www.nitp.ac.in/" target="_blank">NIT Patna</a></li>
+    <li><a href="http://www.nitrr.ac.in/" target="_blank">NIT Raipur</a></li>
+
+    <li><a href="https://www.nitsri.ac.in/" target="_blank">NIT Srinagar</a></li>
+    <li><a href="https://www.mnnit.ac.in/" target="_blank">MNNIT Allahabad</a></li>
+    <li><a href="https://www.manit.ac.in/" target="_blank">MANIT Bhopal</a></li>
+    <li><a href="https://www.nita.ac.in/" target="_blank">NIT Agartala</a></li>
+    <li><a href="https://www.nitap.ac.in/" target="_blank">NIT Arunachal Pradesh</a></li>
+    <li><a href="https://nitdelhi.ac.in/" target="_blank">NIT Delhi</a></li>
+
+    <li><a href="https://www.nitgoa.ac.in/" target="_blank">NIT Goa</a></li>
+    <li><a href="https://www.nitmanipur.ac.in/" target="_blank">NIT Manipur</a></li>
+    <li><a href="https://www.nitm.ac.in/" target="_blank">NIT Meghalaya</a></li>
+    <li><a href="https://www.nitmz.ac.in/" target="_blank">NIT Mizoram</a></li>
+    <li><a href="https://www.nitnagaland.ac.in/" target="_blank">NIT Nagaland</a></li>
+    <li><a href="https://www.nitpy.ac.in/" target="_blank">NIT Puducherry</a></li>
+
+    <li><a href="https://www.nitsikkim.ac.in/" target="_blank">NIT Sikkim</a></li>
+    <li><a href="https://www.nituk.ac.in/" target="_blank">NIT Uttarakhand</a></li>
+    <li><a href="https://www.nitandhra.ac.in/" target="_blank">NIT Andhra Pradesh</a></li>
+    <li><a href="https://vnit.ac.in/" target="_blank">VNIT Nagpur</a></li>
+    <li><a href="https://www.mnit.ac.in/" target="_blank">MNIT Jaipur</a></li>
+    <li><a href="https://www.svnit.ac.in/" target="_blank">SVNIT Surat</a></li>
+</ul>
+
+    </section>
+    <!--BCECE Colleges-->
+
+    <section>
+
+        <h2>Bihar Engineering Colleges</h2>
+
+        <div class="college-grid">
+
+          <a href="#" class="college-card">
+    <img src="mit_muz.webp">
+    <h3>MIT Muzaffarpur</h3>
+    <p>Strong core branches & Oldest Institute</p>
+</a>
+
+<a href="#" class="college-card">
+    <img src="bce_bhagalpur.png">
+    <h3>BCE Bhagalpur</h3>
+    <p>Improving campus placements and a 67% increase in seat capacity</p>
+</a>
+
+<a href="#" class="college-card">
+    <img src="gce_gaya.webp">
+    <h3>GEC Gaya</h3>
+    <p>Strong GATE qualifier</p>
+</a>
+
+<a href="#" class="college-card">
+    <img src="dce_darbhanga.jpeg">
+    <h3>DCE Darbhanga</h3>
+    <p>Developing placement record upto INR 17.39 LPA</p>
+</a>
+
+<a href="#" class="college-card">
+    <img src="sit_sitamarhi.jpeg">
+    <h3>SIT Sitamarhi</h3>
+    <p>Growing institute</p>
+</a>
+
+
+        </div>
+
+        <h3 class="college-heading">Bihar Engineering Colleges</h3>
+
+        <ul class="college-list">
+            <li>Bhagalpur College of Engineering</li>
+            <li>Muzaffarpur Institute of Technology</li>
+            <li>Darbhanga College of Engineering</li>
+            <li>Motihari College of Engineering</li>
+            <li>Loknayak Jai Prakash Institute of Technology, Chapra</li>
+            <li>Bakhtiyarpur College of Engineering</li>
+
+            <li>Government Engineering College, Siwan</li>
+            <li>Government Engineering College, Vaishali</li>
+            <li>Government Engineering College, Samastipur</li>
+            <li>Government Engineering College, Jamui</li>
+            <li>Government Engineering College, Gaya</li>
+            <li>Government Engineering College, Aurangabad</li>
+
+            <li>BP Mandal College Of Engineering, Madhepura</li>
+            <li>Government Engineering College, Madhubani</li>
+            <li>Government Engineering College, Munger</li>
+            <li>Government Engineering College, Nawada</li>
+            <li>Purnea College Of Engineering, Purnea</li>
+            <li>Government Engineering College, Saharsa</li>
+
+            <li>Government Engineering College, Sheikhpura</li>
+            <li>Sitamarhi Institute Of Technology, Sitamarhi</li>
+            <li>Supaul College Of Engineering, Supaul</li>
+            <li>Government Engineering College, West Champaran</li>
+
+            <li>Government Engineering College, Banka</li>
+            <li>Shri Phanishwar Nath Renu Engineering College, Araria</li>
+            <li>Government Engineering College, Bhojpur</li>
+            <li>Government Engineering College, Buxar</li>
+            <li>Government Engineering College, Kishanganj</li>
+            <li>Government Engineering College, Khagaria</li>
+
+        </ul>
+    </section>
+
+    <!-- UPTAC SECTION -->
+    <section>
+        <h2>UP Engineering Colleges (UPTAC)</h2>
+
+        <div class="college-grid">
+
+            <div class="college-card">
+                <img src="gl_bajaj.jpg">
+                <h3>GL Bajaj Institute of Technology & Management</h3>
+                <p>Excellent placement records</p>
+            </div>
+
+            <div class="college-card">
+                <img src="knit_sultanpur.jfif">
+                <h3>KNIT Sultanpur (U.P.)</h3>
+                <p>Producing high-quality engineering graduates</p>
+            </div>
+
+            <div class="college-card">
+                <img src="biet_jhansi.webp">
+                <h3>BIET Jhansi</h3>
+                <p>A Premier government engineering college in Uttar Pradesh (established 1986)About the college</p>
+            </div>
+
+            <div class="college-card">
+                <img src="mmmut_gkp.jpg">
+                <h3>MMMUT Gorakhpur</h3>
+                <p>A premier, historic technical institution (est. 1962) with strong placement records—reaching up to
+                    ₹59 LPA</p>
+            </div>
+
+            <div class="college-card">
+                <img src="niet.webp">
+                <h3>NIET Greater Noida</h3>
+                <p>Strong placement records</p>
+            </div>
+
+        </div>
+
+        <ul class="college-list">
+            <li>AKTU Colleges</li>
+            <li>KNIT Sultanpur</li>
+            <li>BIET Jhansi</li>
+            <li>MMMUT Gorakhpur</li>
+        </ul>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="community">
+        <h2>Still Confused?</h2>
+        <p>Get personalized guidance for your college selection.</p>
+
+        <a href="contact.html" class="btn btn-green">Get Guidance</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 BTECHWALABHAI</p>
+        <p>Every Engineer Needs a Bhai</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
