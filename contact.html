@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Get Guidance - BTECHWALABHAI</title>
+<link rel="stylesheet" href="index_style.css">
 
-<link rel="stylesheet" href="contact_style.css">
+<style>
+     .btn-insta{
+background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4);
+color:white;
+margin-top:15px;
+}
 
+.btn-insta:hover{
+transform:translateY(-3px) scale(1.05);
+}
+
+/* FORM BOX */
+.form{
+max-width:420px;
+margin:40px auto;
+padding:35px;
+border-radius:20px;
+background:rgba(22,27,34,0.85);
+backdrop-filter:blur(15px);
+border:1px solid rgba(88,166,255,0.2);
+box-shadow:0 10px 40px rgba(0,0,0,0.5);
+}
+
+/* INPUT GROUP */
+.input-group{
+position:relative;
+margin-bottom:25px;
+}
+
+/* INPUT */
+.input-group input{
+width:100%;
+padding:14px 12px;
+background:#0D1117;
+border:1px solid #30363D;
+border-radius:10px;
+color:white;
+font-size:14px;
+outline:none;
+transition:0.3s;
+}
+
+/* LABEL */
+.input-group label{
+position:absolute;
+left:12px;
+top:50%;
+transform:translateY(-50%);
+color:#8B949E;
+font-size:14px;
+pointer-events:none;
+transition:0.3s;
+background:#0D1117;
+padding:0 5px;
+}
+
+/* FOCUS EFFECT */
+.input-group input:focus{
+border-color:#58A6FF;
+box-shadow:0 0 10px rgba(88,166,255,0.3);
+}
+
+/* FLOAT LABEL */
+.input-group input:focus + label,
+.input-group input:valid + label{
+top:-8px;
+font-size:12px;
+color:#58A6FF;
+}
+
+/* BUTTON IMPROVE */
+.form .btn{
+width:100%;
+margin-top:10px;
+padding:14px;
+font-size:16px;
+}
+
+.btn-youtube{
+background:linear-gradient(135deg,#ff0000,#cc0000);
+color:white;
+margin-top:15px;
+}
+
+.btn-youtube:hover{
+transform:translateY(-3px) scale(1.05);
+box-shadow:0 10px 25px rgba(255,0,0,0.4);
+}
+</style>
 </head>
 
 <body>
@@ -14,19 +103,18 @@
 <!-- HEADER -->
 <header>
 <div class="logo">
-<img src="btechwalabhai logo.jpg" alt="logo">
+<img src="btechwalabhai logo.jpg">
 <h2>BTECHWALABHAI</h2>
 </div>
 
 <nav class="navbar">
-
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 
 <div class="dropdown">
 <a href="#">Resources ▼</a>
-
 <div class="dropdown-content">
+<a href="course.html">Course</a>
 <a href="roadmap.html">Roadmap</a>
 <a href="colleges.html">Colleges</a>
 <a href="resource.html">Notes</a>
@@ -35,107 +123,111 @@
 
 <a href="counselling.html">Counselling</a>
 <a href="contact.html" class="nav-btn">Get Guidance</a>
-
 </nav>
 </header>
-
 
 <!-- HERO -->
 <section class="hero">
 <h1>Get Personal Guidance 🚀</h1>
-<p>Fill the form and get expert help for your engineering journey.</p>
+<p>Confused about college, branch or career? We’ll guide you step-by-step.</p>
 </section>
 
+<!-- QUICK ACTION (VERY IMPORTANT 🔥) -->
+<section>
+<h2>Connect Instantly</h2>
+
+<a href="https://chat.whatsapp.com/CmiyNewwH2M4cnmfzJFHrF" class="btn btn-green">
+Join WhatsApp Community
+</a>
+
+<br>
+
+<a href="https://www.instagram.com/btechwalabhai/" class="btn btn-insta">
+Follow on Instagram
+</a>
+
+</section>
 
 <!-- FORM -->
-<section>
-<h2>Enter Your Details</h2>
+<section id="form">
+<h2>Get Personal Counselling</h2>
 
 <form class="form">
 
-<input type="text" placeholder="Your Name" required>
-<input type="number" placeholder="Your Rank" required>
-<input type="text" placeholder="Preferred Branch">
-<input type="text" placeholder="State">
-<input type="tel" placeholder="WhatsApp Number" required>
+<div class="input-group">
+<input type="text" required>
+<label>Your Name</label>
+</div>
+
+<div class="input-group">
+<input type="number" required>
+<label>Your Rank</label>
+</div>
+
+<div class="input-group">
+<input type="text">
+<label>Preferred Branch</label>
+</div>
+
+<div class="input-group">
+<input type="text">
+<label>State</label>
+</div>
+
+<div class="input-group">
+<input type="tel" required>
+<label>WhatsApp Number</label>
+</div>
 
 <button type="submit" class="btn btn-blue">Submit Details</button>
 
 </form>
 </section>
 
-
-<!-- WHATSAPP -->
+<!-- WHY TRUST -->
 <section>
-<h2>Or Connect Instantly</h2>
+<h2>Why Trust Us</h2>
 
-<p>Join our WhatsApp community for quick support.</p>
+<div class="features">
 
-<a href="https://chat.whatsapp.com/CmiyNewwH2M4cnmfzJFHrF" class="btn btn-green">
-Join WhatsApp
-</a>
+<div class="card">
+<h3>🎯 Rank-Based Guidance</h3>
+<p>College suggestions based on your rank</p>
+</div>
+
+<div class="card">
+<h3>📊 Real Experience</h3>
+<p>Guidance from engineering students</p>
+</div>
+
+<div class="card">
+<h3>🚀 Fast Support</h3>
+<p>Quick response on WhatsApp</p>
+</div>
+
+</div>
 </section>
 
 <section>
+<h2>Learn With Us on YouTube 🎥</h2>
 
-<h2>Follow Us on Instagram</h2>
+<p>Watch real guidance, counselling tips and engineering roadmap videos.</p>
 
-<p>Follow us on Instagram for daily updates, tips, and real engineering guidance.</p>
-
-<a href="https://www.instagram.com/btechwalabhai/?hl=en" class="btn btn-insta">
-Follow on Instagram
-</a>
-
-</section>
-
-<section>
-
-<h2>Subscribe on YouTube</h2>
-
-<p>Watch tutorials, guidance videos, and engineering content on our YouTube channel.</p>
-
-<a href="https://www.youtube.com/@btechwalabhai" class="btn btn-youtube">
+<a href="https://www.youtube.com/@YOURCHANNEL" target="_blank" class="btn btn-youtube">
 Subscribe on YouTube
 </a>
 
 </section>
 
-
-
-
-<!-- TRUST -->
-<section>
-<h2>Why Choose Us</h2>
-
-<div class="features">
-
-<div class="card">
-<h3>🎯 Personalized Guidance</h3>
-<p>Based on your rank and goals.</p>
-</div>
-
-<div class="card">
-<h3>📊 Real Experience</h3>
-<p>Guidance from engineering students.</p>
-</div>
-
-<div class="card">
-<h3>🚀 Fast Support</h3>
-<p>Quick and helpful response.</p>
-</div>
-
-</div>
-</section>
-
-
-<!-- CTA -->
+<!-- FINAL CTA -->
 <section class="community">
+
 <h2>Don't Risk Your Future 🚀</h2>
-<p>Take the right decision with expert guidance.</p>
+<p>Take the right decision with expert guidance</p>
 
-<a href="counselling.html" class="btn btn-green">Start Counselling</a>
+<a href="#form" class="btn btn-green">Start Now</a>
+
 </section>
-
 
 <!-- FOOTER -->
 <footer>
@@ -143,6 +235,5 @@ Subscribe on YouTube
 <p>Every Engineer Needs a Bhai</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
